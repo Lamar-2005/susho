@@ -3,11 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+        <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+
 </head>
 <body>
+    <section class="heroCont">
+        <!-- nav -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+
+        <div class="nav-icons">
+             <img src="images/shopping cart.svg" alt="">
+      <img src="images/login.svg" alt="">
+      
+        </div>
+    </nav>
+
+    <!-- hero -->
+     <div class="hero">
+       <img class="heroimg" src="images/sushi header.png" alt="">
+
+       <div class="sushi3d1">
+      <model-viewer class="sushimodel1" src="3d assets/sushi rolls 3d model.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
+<div class="herosub">
+   <p class="hero-subtitle">Fresh Sushi Crafted With Art</p>
+
+        <button class="order-btn">Order Now</button>
+     </div>
+</div>
+     </div>
+    </section>
+<section class="About">
+    <div class="aboutCont">
+    <h1>About Susho</h1>
+    <p>At Susho, we don’t just serve sushi — we craft experiences. Every roll is made with care, precision, and passion, using only the freshest ingredients. Inspired by the balance of Japanese tradition and modern creativity, our chefs transform simple ingredients into vibrant, artful dishes. Whether you’re dining in, ordering online, or catering an event, Susho brings authentic flavors and a touch of artistry to every bite.</p>
+</div>
+<div class="redBox">
+  <div class="sushi3d2">
+<model-viewer class="sushiModel2" src="3d assets/sushi.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</div>
+
+</model-viewer>
+</section>
+
+
+
     
 </body>
-
 </html>
