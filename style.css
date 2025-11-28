@@ -722,44 +722,39 @@ flex-direction: row;
 
 
 .service-badge {
-    background-color: var(--bg-color); /* Dark brown from root */
+    background-color: var(--bg-color); 
     color: var(--text-dark);
     padding: 8px 30px;
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 500;
     z-index: 2;
-    /* This creates the overlap effect */
+  
     margin-top: -18px; 
     margin-bottom: 25px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
 .service-desc {
-    color: var(--text-light); /* Off-white color from root */
+    color: var(--text-light);
     font-size: 1rem;
     line-height: 1.5;
     font-weight: 300;
     width: 65%;
 }
 
-/* --- Responsive Design --- */
-
-/* Tablet (max-width: 1024px) */
 @media (max-width: 1024px) {
     .services-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 Columns */
         gap: 50px;
     }
     
-    /* Center the last item if there is an odd number */
+
     .service-card:last-child {
         grid-column: span 2; 
-        max-width: 400px; /* Allow it to be slightly wider */
+        max-width: 400px; 
     }
 }
 
-/* Mobile (max-width: 768px) */
 @media (max-width: 768px) {
     .services-grid {
         display: flex;
@@ -777,4 +772,322 @@ flex-direction: row;
         font-size: 2rem;
         margin-bottom: 40px;
     }
+}
+
+/* --- Best Sellers Section --- */
+
+.best-sellers-section {
+    background-color: var(--text-light); /* Cream background */
+    padding: 100px 20px 80px 20px; /* Top padding accounts for chopsticks overlap */
+    position: relative;
+    overflow: hidden; /* To clip the large Kanji text */
+}
+
+.dark-title {
+    color: #403737; /* Dark brown for title on light bg */
+    margin-top: 20px;
+}
+
+/* --- Floating Chopsticks --- */
+.chopsticks-wrapper {
+    position: absolute;
+    top: -50px; /* Pulls it up into the previous section */
+    left: 15%;  /* Adjusts horizontal position */
+    z-index: 10;
+    width: 250px; /* Base width */
+    pointer-events: none; /* Allows clicking through if it covers anything */
+}
+
+.chopsticks-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transform: rotate(15deg); /* Adjust angle if image isn't pre-rotated */
+}
+
+/* --- Background Kanji Decoration --- */
+.kanji-decor {
+    position: absolute;
+    font-family: var(--font-main); /* Using the theme font */
+    font-size: 10rem;
+    color: rgba(64, 55, 55, 0.05); /* Very faint dark color */
+    z-index: 0;
+    line-height: 1;
+    user-select: none;
+}
+
+.kanji-decor.left {
+    top: 10%;
+    left: -20px;
+}
+
+.kanji-decor.right {
+    bottom: 10%;
+    right: -20px;
+}
+
+/* --- Products Grid --- */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 Columns Desktop */
+    gap: 30px;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2; /* Sits above Kanji */
+}
+
+/* --- Product Card Styling --- */
+.product-card {
+    background-color: var(--bg-color); /* Dark Brown */
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    color: var(--text-dark);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-img-box {
+    width: 100%;
+    height: 180px; /* Fixed height for consistency */
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.product-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--text-dark);
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.product-details .price {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.product-details .pieces {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7); /* Faded white */
+}
+
+/* --- View Menu Button --- */
+.btn-container {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.view-menu-btn {
+    display: inline-block;
+    background-color: var(--btn-bg);
+    color: var(--text-dark);
+    padding: 12px 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.view-menu-btn:hover {
+    background-color: var(--btn-bg-hover);
+}
+
+/* --- Responsive Design --- */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2x2 Grid */
+        gap: 20px;
+    }
+    
+    .chopsticks-wrapper {
+        width: 180px; /* Smaller chopsticks */
+        left: 5%;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: 1fr; /* 1 Column */
+        max-width: 320px; /* Limit width of card on mobile */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .kanji-decor {
+        font-size: 6rem; /* Smaller decorative text */
+    }
+    
+    /* Move chopsticks so they don't cover the title on small screens */
+    .chopsticks-wrapper {
+        width: 120px;
+        top: -30px;
+        left: -10px; 
+    }
+}
+
+/* --- Crafted With Balance Section --- */
+
+.balance-section {
+    /* Using the reddish color seen in the design image. 
+       If you want to use the variable from the first section, use var(--service-section-bg) 
+       or hardcode it if you haven't defined that variable globally yet. */
+    background-color: #bf4b4b; 
+    position: relative;
+    padding: 80px 20px 100px 20px;
+    overflow: hidden; /* Clips the decorative text */
+    text-align: center;
+}
+
+.light-title {
+    color: var(--text-dark); /* Per your root, this is #ffffff (White) */
+    position: relative;
+    z-index: 2;
+}
+
+.balance-content {
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    position: relative;
+    z-index: 2;
+}
+
+.balance-description {
+    color: var(--text-light); /* Cream color */
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+
+.balance-image-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.balance-img {
+
+    width: 100%;
+    height: 997.33px; 
+
+ 
+   
+    animation: float 6s ease-in-out infinite;
+}
+
+.sushi-shadow {
+    width: 200px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    margin-top: -20px; /* Pulls shadow under the image */
+    filter: blur(10px);
+    animation: shadowScale 6s ease-in-out infinite;
+}
+
+/* --- Decorative Kanji Columns --- */
+.kanji-column {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    font-family: var(--font-main);
+    font-size: 8rem;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.1); /* Low opacity white */
+    user-select: none;
+    z-index: 1;
+}
+
+.left-col {
+    left: -20px;
+}
+
+.right-col {
+    right: -20px;
+}
+
+/* --- Animations (Optional but adds the "Art" feel) --- */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes shadowScale {
+    0% { transform: scale(1); opacity: 0.3; }
+    50% { transform: scale(0.8); opacity: 0.2; }
+    100% { transform: scale(1); opacity: 0.3; }
+}
+
+/* --- Responsive Design --- */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .kanji-column {
+        font-size: 6rem;
+    }
+    
+    .balance-img {
+        height: 400px;
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .balance-section {
+        padding: 60px 20px;
+    }
+
+    .kanji-column {
+        font-size: 4rem;
+        gap: 20px;
+    }
+    
+   
+    .left-col { left: -30px; }
+    .right-col { right: -30px; }
+
+    .balance-description {
+        font-size: 1rem;
+    }
+
+    .balance-img {
+        height: 300px; /* Smaller image for mobile */
+    }
+    
+    .sushi-shadow {
+        width: 120px;
+    }
+}
+
+.sushimodel{
+    width: 100%;
+  height:750px;
 }
