@@ -165,7 +165,7 @@ gap: 10% ;
 }
 .aboutCont,p{
     font-family: 'Montserrat';
-    font-size: 24px;
+    font-size: 16px;
 font-style: normal;
 font-weight: 400;
    color: var(--bg-color);
@@ -521,7 +521,6 @@ margin-top: 10%;
     color: var(--accent-color);
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
     .contact-hero h1 {
         font-size: 6rem;
@@ -647,14 +646,7 @@ margin-top: 10%;
 }
 
 
-/* .Services{
-background-image: url(images/ourservicebg.png);
-background-repeat: no-repeat;
-height: 1280px; 
-align-items: center;
-display: flex;
-flex-direction: row;
-} */
+
 
 
 
@@ -764,7 +756,7 @@ flex-direction: row;
     }
 
     .service-card:last-child {
-        grid-column: auto;
+        grid-column: auto;.
         max-width: 300px;
     }
 
@@ -774,43 +766,43 @@ flex-direction: row;
     }
 }
 
-/* --- Best Sellers Section --- */
+
 
 .best-sellers-section {
-    background-color: var(--text-light); /* Cream background */
-    padding: 100px 20px 80px 20px; /* Top padding accounts for chopsticks overlap */
+    background-color: var(--text-light); 
+    padding: 100px 20px 80px 20px;
     position: relative;
-    overflow: hidden; /* To clip the large Kanji text */
+    overflow: hidden; 
 }
 
 .dark-title {
-    color: #403737; /* Dark brown for title on light bg */
+    color: #403737; 
     margin-top: 20px;
 }
 
-/* --- Floating Chopsticks --- */
+
 .chopsticks-wrapper {
     position: absolute;
-    top: -50px; /* Pulls it up into the previous section */
-    left: 15%;  /* Adjusts horizontal position */
+    top: -50px; 
+    left: 15%;  
     z-index: 10;
-    width: 250px; /* Base width */
-    pointer-events: none; /* Allows clicking through if it covers anything */
+    width: 250px; 
+    pointer-events: none; 
 }
 
 .chopsticks-img {
     width: 100%;
     height: auto;
     display: block;
-    transform: rotate(15deg); /* Adjust angle if image isn't pre-rotated */
+    transform: rotate(15deg); 
 }
 
-/* --- Background Kanji Decoration --- */
+
 .kanji-decor {
     position: absolute;
-    font-family: var(--font-main); /* Using the theme font */
+    font-family: var(--font-main); 
     font-size: 10rem;
-    color: rgba(64, 55, 55, 0.05); /* Very faint dark color */
+    color: rgba(64, 55, 55, 0.05); 
     z-index: 0;
     line-height: 1;
     user-select: none;
@@ -826,19 +818,19 @@ flex-direction: row;
     right: -20px;
 }
 
-/* --- Products Grid --- */
+
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 Columns Desktop */
+    grid-template-columns: repeat(4, 1fr); 
     gap: 30px;
     margin-bottom: 50px;
     position: relative;
-    z-index: 2; /* Sits above Kanji */
+    z-index: 2; 
 }
 
-/* --- Product Card Styling --- */
+
 .product-card {
-    background-color: var(--bg-color); /* Dark Brown */
+    background-color: var(--bg-color); 
     border-radius: 15px;
     padding: 20px;
     text-align: center;
@@ -853,7 +845,7 @@ flex-direction: row;
 
 .product-img-box {
     width: 100%;
-    height: 180px; /* Fixed height for consistency */
+    height: 180px; 
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 20px;
@@ -885,10 +877,10 @@ flex-direction: row;
 
 .product-details .pieces {
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.7); /* Faded white */
+    color: rgba(255, 255, 255, 0.7); 
 }
 
-/* --- View Menu Button --- */
+
 .btn-container {
     text-align: center;
     position: relative;
@@ -910,35 +902,31 @@ flex-direction: row;
     background-color: var(--btn-bg-hover);
 }
 
-/* --- Responsive Design --- */
 
-/* Tablet (max-width: 1024px) */
 @media (max-width: 1024px) {
     .products-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2x2 Grid */
         gap: 20px;
     }
     
     .chopsticks-wrapper {
-        width: 180px; /* Smaller chopsticks */
+        width: 180px; 
         left: 5%;
     }
 }
 
-/* Mobile (max-width: 768px) */
 @media (max-width: 768px) {
     .products-grid {
-        grid-template-columns: 1fr; /* 1 Column */
-        max-width: 320px; /* Limit width of card on mobile */
+        grid-template-columns: 1fr; 
+        max-width: 320px;
         margin-left: auto;
         margin-right: auto;
     }
 
     .kanji-decor {
-        font-size: 6rem; /* Smaller decorative text */
+        font-size: 6rem; 
     }
     
-    /* Move chopsticks so they don't cover the title on small screens */
+    
     .chopsticks-wrapper {
         width: 120px;
         top: -30px;
@@ -946,21 +934,19 @@ flex-direction: row;
     }
 }
 
-/* --- Crafted With Balance Section --- */
+
 
 .balance-section {
-    /* Using the reddish color seen in the design image. 
-       If you want to use the variable from the first section, use var(--service-section-bg) 
-       or hardcode it if you haven't defined that variable globally yet. */
+  
     background-color: #bf4b4b; 
     position: relative;
     padding: 80px 20px 100px 20px;
-    overflow: hidden; /* Clips the decorative text */
+    overflow: hidden;
     text-align: center;
 }
 
 .light-title {
-    color: var(--text-dark); /* Per your root, this is #ffffff (White) */
+    color: var(--text-dark); 
     position: relative;
     z-index: 2;
 }
@@ -1033,7 +1019,6 @@ flex-direction: row;
     right: -20px;
 }
 
-/* --- Animations (Optional but adds the "Art" feel) --- */
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-15px); }
@@ -1046,9 +1031,6 @@ flex-direction: row;
     100% { transform: scale(1); opacity: 0.3; }
 }
 
-/* --- Responsive Design --- */
-
-/* Tablet (max-width: 1024px) */
 @media (max-width: 1024px) {
     .kanji-column {
         font-size: 6rem;
@@ -1059,7 +1041,7 @@ flex-direction: row;
     }
 }
 
-/* Mobile (max-width: 768px) */
+ 
 @media (max-width: 768px) {
     .balance-section {
         padding: 60px 20px;
@@ -1087,7 +1069,357 @@ flex-direction: row;
     }
 }
 
-.sushimodel{
+.sushimodel3{
     width: 100%;
-  height:750px;
+  height: 750px;
 }
+.sushi3d4{
+    width: 100%;
+    height: 600px;
+}
+.hero-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: var(--bg-color);
+}
+
+.outline-title {
+    font-family: 'Teko', sans-serif; /* Using narrow font to match image */
+    font-size: 8rem;
+    text-transform: uppercase;
+    line-height: 1;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--text-light); /* Outline effect */
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.hero-image-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-image-container img {
+    width: 100%;
+    border-radius: 10px; /* Optional slight rounding */
+}
+
+.our-story {
+    background-color: #a64d4d; /* Using a darker shade visually closer to image than --accent-color, or revert to var(--accent-color) */
+    background-color: var(--accent-color); /* Per your request */
+    padding: 80px 50px;
+    color: var(--text-light);
+}
+
+.container.flex-row {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    gap: 50px;
+}
+
+.story-text {
+    flex: 1;
+}
+
+.story-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+ 
+    font:"Krungthep" ;
+}
+
+.story-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    opacity: 0.9;
+    color: var(--text-light);
+}
+
+.story-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.story-image img {
+    border-radius: 50%; /* If you want a circle image like the sushi roll, keep this. If square, remove. */
+ 
+    transform: rotate(-15deg); /* Artistic tilt */
+}
+
+/* --- MEET OUR CHEF SECTION --- */
+.meet-chef {
+    background-image: url(images/Meet\ our\ chef.png);
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
+    text-align: center;
+    background-repeat: no-repeat;
+   width: 100%;
+   height: 650px;
+   
+}
+
+.bg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12rem;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    color: #333;
+    white-space: nowrap;
+    z-index: 1;
+    opacity: 0.8;
+    line-height: 0.8;
+}
+
+.chef-content {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+}
+
+.chef-content img {
+    height: 500px;
+    width: auto;
+}
+
+
+
+/* --- PHILOSOPHY SECTION --- */
+.philosophy {
+    background-color: #333;
+    min-height: 850px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    perspective: 1000px;
+}
+
+/* --- BACKGROUND KANJI --- */
+.kanji-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.kanji-bg span {
+    position: absolute;
+    font-family: var(--font-headers);
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.04);
+    line-height: 1;
+}
+
+.k1 { top: 10%; left: 5%; font-size: 15rem; }
+.k2 { top: 50%; right: 10%; font-size: 20rem; }
+.k3 { bottom: 5%; left: 15%; font-size: 10rem; }
+
+.philosophy-card {
+    background-color: #ba5a5a;
+   
+    padding: 60px 50px;
+    position: relative;
+    z-index: 2;
+    color: var(--text-light);
+    box-shadow: 10px 20px 50px rgba(0,0,0,0.6);
+
+    transform: rotate(-2deg);
+    transition: transform 0.3s ease;
+}
+
+.philosophy-card:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+.philosophy-card h3 {
+    font-family: var(--font-headers);
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+/* --- RESPONSIVE ADJUSTMENTS --- */
+@media (max-width: 768px) {
+    .philosophy { min-height: auto; padding: 60px 20px; }
+    
+   
+    
+    .philosophy-card { 
+        transform: rotate(0deg); 
+        width: 100%;
+        margin: 0;
+        z-index: 2;
+    }
+}
+
+.our-space {
+    background-color: var(--text-light); /* Beige */
+    padding: 80px 50px;
+    text-align: center;
+  font-family:" Krungthep" ;
+}
+
+.our-space h2 {
+    color: #3e3333;
+    font-size: 3rem;
+    margin-bottom: 50px;
+    font-family: " Krungthep";
+    text-transform: uppercase;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+}
+
+.grid-item:hover img {
+    transform: scale(1.05);
+}
+
+
+.g1 { grid-column: span 2; }
+.g2 { grid-column: span 2; }
+
+footer {
+    background-color: var(--bg-footer);
+    padding: 80px 50px 20px;
+    color: #aaa;
+    font-size: 0.85rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #555;
+    padding-bottom: 50px;
+}
+
+.footer-col h4 {
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a:hover {
+    color: var(--accent-color);
+}
+
+.newsletter .input-group {
+    margin-bottom: 15px;
+}
+
+.newsletter input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid #666;
+    color: #fff;
+}
+
+.newsletter button {
+    width: 100%;
+    padding: 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+
+.newsletter button:hover {
+    background-color: var(--accent-color);
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.legal {
+    display: flex;
+    gap: 20px;
+}
+
+
+@media (max-width: 1024px) {
+    .bg-text { font-size: 8rem; }
+    .gallery-grid { grid-template-rows: repeat(3, 250px); }
+    .g1, .g2 { grid-column: span 4; }
+    .g3, .g4, .g5, .g6 { grid-column: span 2; }
+}
+
+@media (max-width: 768px) {
+    /* Header */
+    header { padding: 20px; }
+    nav { display: none;  }
+    
+
+    .container.flex-row { flex-direction: column; }
+    .story-text { text-align: center; }
+    
+  
+    .bg-text { font-size: 5rem; white-space: normal; line-height: 1; width: 100%; }
+    .chef-content img { height: 350px; }
+    
+    .philosophy-card { padding: 30px 20px; }
+    .p-item, .p-total { grid-template-columns: 1fr; gap: 5px; }
+    
+    .gallery-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
+    .grid-item { grid-column: span 1 !important; height: 250px; }
+
+    .footer-container { flex-direction: column; gap: 30px; }
+    .footer-bottom { flex-direction: column; gap: 20px; text-align: center; }
+    .legal { justify-content: center; flex-wrap: wrap; }
+}
+
+.stick{
+    position: absolute;
+    z-index: 1;
+  right: 1px;
+ top:15%;
+}
+

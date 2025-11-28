@@ -20,7 +20,7 @@
 
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
+            <li><a href="about.html">About us</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="contact.html">Contact us</a></li>
         </ul>
@@ -229,7 +229,7 @@
         </div>
 
         <div class="balance-image-container">
-  <model-viewer class=" " src="3d assets/assorted sushi 3d model.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate>
+<model-viewer class="sushimodel3" src="assorted sushi 3d model.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" auto-rotate>
     <div class="progress-bar hide" slot="progress-bar">
         <div class="update-bar"></div>
     </div>
@@ -237,8 +237,7 @@
         View in your space
     </button>
     <div id="ar-prompt">
-    
-      
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
     </div>
 </model-viewer>
 
@@ -246,6 +245,59 @@
 
     </div>
 </section>
+
+ <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="Susho Logo">
+                  
+                </div>
+            
+            
+            </div>
+            
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Free eBooks</a></li>
+                    <li><a href="#">Development Tutorial</a></li>
+                    <li><a href="#">How to - Blog</a></li>
+                    <li><a href="#">Youtube Playlist</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="submit">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="#">About us</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">Sitemap</a>
+                <a href="#">Terms of Use</a>
+            </div>
+            <p>© 2025. All Rights Reserved</p>
+        </div>
+    </footer>
+
 
 </body>
   <script src="code.js"></script>
