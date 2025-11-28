@@ -1,4 +1,4 @@
-/* VARIABLES & RESET */
+
 :root {
     --red: #ba5a5a;
     --dark: #403737;
@@ -19,7 +19,6 @@ body {
 
 h1, h2, h3, h4 {   font-family: "Krungthep", sans-serif;  text-transform: uppercase; letter-spacing: 1px; }
 
-/* HEADER */
 .header {
     display: flex; justify-content: space-between; align-items: center;
     padding: 20px 50px; background: var(--red); color: #fff;
@@ -32,7 +31,7 @@ nav a {
 nav a:hover, nav a.active { color: #fff; }
 .header-icons a { color: #fff; margin-left: 15px; }
 
-/* HERO SECTION */
+
 .hero {
     background: var(--red); height: 600px; text-align: center;
     position: relative; padding-top: 50px; overflow: hidden;
@@ -52,21 +51,17 @@ nav a:hover, nav a.active { color: #fff; }
 
 .pattern-bg {
     background-color: var(--beige);
-/*   
-    background-image: 
-       url(images/servicesbg.png);
-       background-repeat: no-repeat; */
+
     background-size: 20px 20px;
     background-position: 0 0, 10px 10px;
     opacity: 1;
 }
 
-/* OFFER SECTION */
 .offer { padding: 80px 50px; text-align: center; }
 .offer h2 { font-size: 3rem; margin-bottom: 10px; }
 .subtitle { max-width: 500px; margin: 0 auto 50px; color: #666; font-size: 0.95rem; }
 
-/* STANDARD CARDS (Dine In & Takeaway) */
+
 .card {
     width: 100%; max-width: 1000px; margin: 0 auto 50px;
     border-radius: 20px; padding: 50px;
@@ -95,16 +90,13 @@ nav a:hover, nav a.active { color: #fff; }
 .btn:hover { transform: translateY(-3px); }
 
 
-/* ========================================================
-   CATERING CARD (WIDE LAYOUT - MATCHING PHOTO)
-   ======================================================== */
 .card.wide-layout {
-    flex-direction: column; /* Stack Top (Text) and Bottom (Image) */
+    flex-direction: column; 
     align-items: flex-start;
     padding: 60px;
 }
 
-/* Top Row: Text vs List */
+
 .wide-top {
     display: flex;
     justify-content: space-between;
@@ -122,7 +114,7 @@ nav a:hover, nav a.active { color: #fff; }
 .wide-list {
     flex: 1;
     display: flex;
-    justify-content: flex-end; /* Push list to right */
+    justify-content: flex-end; 
 }
 .wide-list ul {
     list-style: none;
@@ -136,12 +128,12 @@ nav a:hover, nav a.active { color: #fff; }
     gap: 12px;
 }
 .wide-list i {
-    color: var(--dark); /* Dark icon on red bg? No, needs to be dark red or white */
-    color: rgba(0,0,0,0.3); /* Subtle dark icon */
+    color: var(--dark); 
+    color: rgba(0,0,0,0.3); 
     font-size: 1rem;
 }
 
-/* Bottom Row: Image & Button */
+
 .wide-bottom {
     width: 100%;
     text-align: center;
@@ -154,18 +146,17 @@ nav a:hover, nav a.active { color: #fff; }
     max-width: 80%;
     height: auto;
     object-fit: contain;
-    margin-bottom: -30px; /* Slight overlap effect if needed */
+    margin-bottom: -30px; 
 }
 .centered-btn {
     margin-top: 10px;
     position: relative;
-    z-index: 2; /* Ensure button sits on top of image if overlapping */
+    z-index: 2; 
 }
 
 
-/* HOW IT WORKS */
 .how { padding: 50px 50px 100px; text-align: center; position: relative; }
-/* Hanging Lanterns Left */
+
 .lanterns { position: absolute; top:-200px; left: 80px; display: flex; gap: 15px; z-index: 5; }
 .lantern { width: 35px; background: #d85c5c; border-radius: 8px; position: relative; box-shadow: 0 5px 10px rgba(0,0,0,0.2); border: 1px solid rgba(0,0,0,0.1); }
 .lantern::before { content:''; position: absolute; top:-50px; left:50%; width:1px; height:50px; background:#333; }
@@ -179,17 +170,16 @@ nav a:hover, nav a.active { color: #fff; }
 .step-number { 
     font-family: "Krungthep", sans-serif; 
     font-size: 3.5rem; 
-    color: #ba5a5a;      /* Makes it RED */
-    font-weight: 100;    /* Makes it THIN */
+    color: #ba5a5a;      
+    font-weight: 100;    
     line-height: 1; 
-    margin-right: 15px;  /* Adds space between number and icon */
-    opacity: 1;          /* Removes the fade */
+    margin-right: 15px;  
+    opacity: 1;          
 }
 .step-box h4 { font-size: 1.2rem; margin-bottom: 10px; text-transform: none; }
 .step-box p { font-size: 0.85rem; opacity: 0.7; line-height: 1.5; }
 
 
-/* WHY SECTION */
 .why { background: var(--red); color: #fff; padding: 80px 50px; position: relative; overflow: hidden; }
 .why-container { display: flex; max-width: 1100px; margin: 0 auto; gap: 60px; align-items: center; position: relative; z-index: 2;}
 .why-text { flex: 1.2; }
@@ -203,7 +193,7 @@ nav a:hover, nav a.active { color: #fff; }
 .feature h4 { font-size: 1.1rem; margin-bottom: 5px; text-transform: none; }
 .feature p { opacity: 0.8; font-size: 0.9rem; line-height: 1.4; }
 
-/* Lanterns Right (Red bg, so lanterns usually darker or decorative) */
+
 .lanterns-right { position: absolute; top: -20px; right: 100px; display: flex; gap: 10px; }
 .lantern-red { width: 40px; height: 60px; background: #a14646; border-radius: 10px; position: relative; }
 .lantern-red::before { content:''; position: absolute; top:-40px; left:50%; width:1px; height:40px; background:#403737; }
@@ -217,7 +207,6 @@ nav a:hover, nav a.active { color: #fff; }
 .kanji-border span { margin: 0 40px; display: inline-block; }
 
 
-/* TESTIMONIALS */
 .testimonials { padding: 80px 50px; background: var(--beige); text-align: center; }
 .testimonials h2 { font-size: 2.5rem; margin-bottom: 60px; color: var(--dark); }
 
@@ -229,7 +218,7 @@ nav a:hover, nav a.active { color: #fff; }
 .test-box h4 { margin-top: 20px; font-size: 1.1rem; letter-spacing: 1px; }
 .test-box p { font-style: italic; opacity: 0.7; font-size: 0.85rem; line-height: 1.5; }
 
-/* FINAL CTA */
+
 .final-cta { 
     background: var(--red); text-align: center; padding: 100px 20px; color: #fff; 
     background-image: radial-gradient(rgba(0,0,0,0.05) 1px, transparent 1px); background-size: 30px 30px; 
@@ -237,7 +226,7 @@ nav a:hover, nav a.active { color: #fff; }
 .final-cta h2 { font-size: 2.5rem; margin-bottom: 15px; text-transform: none; }
 .final-cta p { margin-bottom: 30px; opacity: 0.9; }
 
-/* FOOTER */
+
 .footer { background: var(--dark); color: #aaa; padding: 60px 50px 20px; }
 .footer-cols { display: flex; justify-content: space-between; border-bottom: 1px solid #555; padding-bottom: 40px; max-width: 1100px; margin: 0 auto; flex-wrap: wrap; gap: 30px; }
 .col h4 { color: #fff; margin-bottom: 20px; letter-spacing: 1px; font-size: 0.9rem; }
@@ -246,7 +235,7 @@ nav a:hover, nav a.active { color: #fff; }
 .newsletter button { padding: 10px 20px; background: #555; border: none; color: #fff; cursor: pointer; font-family: var(--font-head); border-radius: 4px; }
 .copyright { text-align: center; padding-top: 20px; font-size: 0.7rem; opacity: 0.5; }
 
-/* RESPONSIVE */
+
 @media (max-width: 900px) {
     .hero-title { font-size: 8rem; }
     #hero-3d-placeholder { width: 300px; height: 200px; }
@@ -257,7 +246,6 @@ nav a:hover, nav a.active { color: #fff; }
     .kanji-list { text-align: center; display: inline-block; }
     .kanji-list li { justify-content: center; }
 
-    /* Catering Mobile */
     .wide-top { flex-direction: column; gap: 20px; text-align: center; }
     .wide-text, .wide-list { text-align: center; justify-content: center; }
     .wide-list ul { text-align: center; }

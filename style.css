@@ -192,7 +192,7 @@ margin-top: 10%;
   
 }
 
-  /* Contact Hero Section */
+ 
 .contact-hero {
  display: flex;
 
@@ -225,7 +225,7 @@ margin-top: 10%;
 
 
 
-/* Form Section */
+
 .form-section {
     background: var(--text-light);
     padding: 80px 20px;
@@ -297,7 +297,7 @@ margin-top: 10%;
     transform: translateY(-2px);
 }
 
-/* Contact Info Cards */
+
 .contact-cards {
     max-width: 1200px;
     margin: -50px auto 80px;
@@ -344,7 +344,7 @@ margin-top: 10%;
     font-size: 1.1rem;
 }
 
-/* Locations Section */
+
 .locations-section {
      display: flex;
     background: var(--text-light);
@@ -383,7 +383,7 @@ margin-top: 10%;
     background: #e0e0e0;
 }
 
-/* Footer */
+
 .footer {
     background: #2d2626;
     padding: 70px 20px 40px;
@@ -959,7 +959,7 @@ margin-top: 10%;
 }
 
 .balance-description {
-    color: var(--text-light); /* Cream color */
+    color: var(--text-light); 
     font-size: 1.1rem;
     line-height: 1.6;
     font-weight: 300;
@@ -990,12 +990,12 @@ margin-top: 10%;
     height: 20px;
     background: rgba(0, 0, 0, 0.3);
     border-radius: 50%;
-    margin-top: -20px; /* Pulls shadow under the image */
+    margin-top: -20px; 
     filter: blur(10px);
     animation: shadowScale 6s ease-in-out infinite;
 }
 
-/* --- Decorative Kanji Columns --- */
+
 .kanji-column {
     position: absolute;
     top: 50%;
@@ -1006,7 +1006,7 @@ margin-top: 10%;
     font-family: var(--font-main);
     font-size: 8rem;
     line-height: 1;
-    color: rgba(255, 255, 255, 0.1); /* Low opacity white */
+    color: rgba(255, 255, 255, 0.1); 
     user-select: none;
     z-index: 1;
 }
@@ -1061,7 +1061,7 @@ margin-top: 10%;
     }
 
     .balance-img {
-        height: 300px; /* Smaller image for mobile */
+        height: 300px; 
     }
     
     .sushi-shadow {
@@ -1084,12 +1084,12 @@ margin-top: 10%;
 }
 
 .outline-title {
-    font-family: 'Teko', sans-serif; /* Using narrow font to match image */
+    font-family: 'Teko', sans-serif; 
     font-size: 8rem;
     text-transform: uppercase;
     line-height: 1;
     color: transparent;
-    -webkit-text-stroke: 2px var(--text-light); /* Outline effect */
+    -webkit-text-stroke: 2px var(--text-light); 
     letter-spacing: 5px;
     margin-bottom: 10px;
 }
@@ -1107,12 +1107,11 @@ margin-top: 10%;
 
 .hero-image-container img {
     width: 100%;
-    border-radius: 10px; /* Optional slight rounding */
+    border-radius: 10px;
 }
-
 .our-story {
-    background-color: #a64d4d; /* Using a darker shade visually closer to image than --accent-color, or revert to var(--accent-color) */
-    background-color: var(--accent-color); /* Per your request */
+    background-color: #a64d4d; 
+    background-color: var(--accent-color); 
     padding: 80px 50px;
     color: var(--text-light);
 }
@@ -1151,12 +1150,12 @@ margin-top: 10%;
 }
 
 .story-image img {
-    border-radius: 50%; /* If you want a circle image like the sushi roll, keep this. If square, remove. */
+    border-radius: 50%; 
  
-    transform: rotate(-15deg); /* Artistic tilt */
+    transform: rotate(-15deg);
 }
 
-/* --- MEET OUR CHEF SECTION --- */
+
 .meet-chef {
     background-image: url(images/Meet\ our\ chef.png);
     position: relative;
@@ -1197,7 +1196,6 @@ margin-top: 10%;
 
 
 
-/* --- PHILOSOPHY SECTION --- */
 .philosophy {
     background-color: #333;
     min-height: 850px;
@@ -1209,7 +1207,7 @@ margin-top: 10%;
     perspective: 1000px;
 }
 
-/* --- BACKGROUND KANJI --- */
+
 .kanji-bg {
     position: absolute;
     width: 100%;
@@ -1254,7 +1252,6 @@ margin-top: 10%;
     margin-bottom: 30px;
 }
 
-/* --- RESPONSIVE ADJUSTMENTS --- */
 @media (max-width: 768px) {
     .philosophy { min-height: auto; padding: 60px 20px; }
     
@@ -1269,7 +1266,7 @@ margin-top: 10%;
 }
 
 .our-space {
-    background-color: var(--text-light); /* Beige */
+    background-color: var(--text-light); 
     padding: 80px 50px;
     text-align: center;
   font-family:" Krungthep" ;
