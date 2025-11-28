@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>service</title>
+        <link rel="stylesheet" href="service.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+
+</head>
+<body>
+    <section class="heroCont">
+        <!-- nav -->
+<!-- ================= HEADER ================= -->
+<header class="header">
+    <div class="logo"><i class="fas fa-fish"></i> susho</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="contact.html">Contact us</a>
+    </nav>
+    <div class="header-icons">
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#"><i class="fas fa-user"></i></a>
+    </div>
+</header>
+
+
+
+
+
+<section class="hero">
+ <img src="images/services.png" alt="">
+    <div id="hero-3d-placeholder">
+       <model-viewer class="sushimodel5" src="3d assets/sushi platter 3d model.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        
+</model-viewer>
+
+    </div>
+</section>
+
+
+<!-- ================= PATTERN BACKGROUND WRAPPER ================= -->
+<div class="pattern-bg">
+
+    <section class="offer">
+        <h2>What We Offer</h2>
+        <p class="subtitle">Each service is crafted with the same precision and care we put into every sushi roll.</p>
+
+        <!-- CARD 1: DINE IN -->
+        <div class="card red">
+            <div class="card-image tilt-left">
+                <!-- Replace with sushi roll image -->
+                <img src="images/sushi service1.png">
+            </div>
+            <div class="text">
+                <h3>Dine-In</h3>
+                <p>Experience the art of sushi making firsthand in our serene dining space. Watch our master chefs craft each piece with precision.</p>
+                <ul class="kanji-list">
+                    <li><span>寿</span> Traditional Japanese ambiance</li>
+                    <li><span>寿</span> Sake pairing recommendations</li>
+                    <li><span>寿</span> Live chef demonstration</li>
+                    <li><span>寿</span> Premium seating options</li>
+                </ul>
+                <button class="btn btn-dark">Reserve</button>
+            </div>
+        </div>
+
+        <!-- CARD 2: TAKEAWAY -->
+        <div class="card dark">
+            <div class="text">
+                <h3>Takeaway & Delivery</h3>
+                <p>Enjoy Susho's culinary excellence from the comfort of your home. Our specialty designed packaging ensures freshness.</p>
+                <ul class="kanji-list red-bullets">
+                    <li><span>寿</span> 30-minute delivery guarantee</li>
+                    <li><span>寿</span> Eco-friendly packaging</li>
+                    <li><span>寿</span> Temperature controlled transport</li>
+                    <li><span>寿</span> Track your order in real-time</li>
+                </ul>
+                <button class="btn btn-red">Order</button>
+            </div>
+            <div class="card-image tilt-right">
+                <!-- Replace with takeaway sushi image -->
+                <img src="images/sushi service2.png">
+            </div>
+        </div>
+
+        <!-- CARD 3: EVENT CATERING (Matched to Photo) -->
+        <div class="card red wide-layout">
+            
+            <!-- Top Row: Text Left, List Right -->
+            <div class="wide-top">
+                <div class="wide-text">
+                    <h3>Event Catering</h3>
+                    <p>Transform your events into unforgettable experiences with our premium catering service. From intimate gatherings to large celebrations, we bring the Susho experience to you.</p>
+                </div>
+                <div class="wide-list">
+                    <ul>
+                        <li><i class="fas fa-truck-loading"></i> Equipment and setup included</li>
+                        <li><i class="fas fa-clipboard-check"></i> Customized menu creation</li>
+                        <li><i class="fas fa-user-tie"></i> Professional on-site service</li>
+                        <li><i class="fas fa-users"></i> Minimum 20 guests</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Row: Image Center with Button -->
+            <div class="wide-bottom">
+                <!-- Replace with the wooden boat platter image -->
+                <img src="images/sushi servie3.png" alt="Catering Platter">
+                <button class="btn btn-dark centered-btn">Book</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= HOW IT WORKS ================= -->
+    <section class="how">
+        <div class="lanterns">
+        <img src="images/lantern.png" alt="">
+        </div>
+        <h2>How It Works</h2>
+        <p class="subtitle">Simple steps to experience the finest Japanese cuisine.</p>
+        <div class="steps-grid">
+            <div class="step-box">
+                <div class="step-header"><span class="step-number">01</span><i class="fas fa-map-marker-alt"></i></div>
+                <h4>Choose Your Service</h4>
+                <p>Select from our curated service offerings.</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-number">02</span><i class="fas fa-calendar-alt"></i></div>
+                <h4>Customize Details</h4>
+                <p>Select time, guests, and special requirements.</p>
+            </div>
+            <div class="step-box">
+                <div class="step-header"><span class="step-number">03</span><i class="fas fa-clock"></i></div>
+                <h4>Confirm & Relax</h4>
+                <p>We handle everything with precision.</p>
+            </div>
+        </div>
+    </section>
+
+</div> 
+<section class="why">
+    
+    <div class="lanterns-right">
+        <div class="lantern-red"></div>
+        <div class="lantern-red small"></div>
+    </div>
+
+    <div class="why-container">
+        <div class="why-text">
+            <h2>Why Choose Susho Services?</h2>
+            <p class="why-desc">Every service we offer is rooted in the same philosophy that guides our craft: precision, authenticity, and an unwavering commitment to excellence.</p>
+            
+            <div class="why-features">
+                <div class="feature">
+                    <i class="fas fa-hat-chef"></i>
+                    <div><h4>Master Craftsmanship</h4><p>Our chefs bring decades of training in traditional Japanese techniques.</p></div>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-gem"></i>
+                    <div><h4>Premium Ingredients</h4><p>Daily sourced fish and authentic Japanese ingredients.</p></div>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-clock"></i>
+                    <div><h4>Flexible & Reliable</h4><p>Tailored solutions ensuring your event runs perfectly on time.</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="why-visual">
+           <model-viewer class="sushi3d6" src="3d assets/sushi roll 3d model.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
+        </div>
+    </div>
+    
+    <!-- Kanji Border at Bottom -->
+    <div class="kanji-border"><span>寿司</span><span>寿司</span><span>寿司</span><span>寿司</span><span>寿司</span></div>
+</section>
+
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="testimonials">
+    <h2>Customer testimonials</h2>
+    <div class="test-grid">
+        <div class="test-box">
+            <div class="test-img"><img src="images/karim hassan.png" alt="User"></div>
+            <h4>Karim Hassan</h4><div class="stars">★★★★★</div>
+            <p>"The best sushi catering I've ever had. My birthday was amazing."</p>
+        </div>
+        <div class="test-box">
+            <div class="test-img"><img src="images/maya.png" alt="User"></div>
+            <h4>Maya Tanaka</h4><div class="stars">★★★★★</div>
+            <p>"Susho is my go-to spot whenever I crave authentic sushi."</p>
+        </div>
+        <div class="test-box">
+            <div class="test-img"><img src="images/kenji.png" alt="User"></div>
+            <h4>Kenji Watanabe</h4><div class="stars">★★★★★</div>
+            <p>"As someone who moved from Tokyo, this tastes like home."</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="final-cta">
+    <h2>Ready to Experience Susho?</h2>
+    <p>Let us bring the art of Japanese cuisine to your table.</p>
+    <button class="btn btn-dark">Call Now</button>
+</section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="Susho Logo">
+                  
+                </div>
+             
+            </div>
+            
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Free eBooks</a></li>
+                    <li><a href="#">Development Tutorial</a></li>
+                    <li><a href="#">How to - Blog</a></li>
+                    <li><a href="#">Youtube Playlist</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address">
+                    <button type="submit">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="#">About us</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">Sitemap</a>
+                <a href="#">Terms of Use</a>
+            </div>
+            <p>© 2025. All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
